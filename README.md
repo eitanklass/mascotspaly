@@ -1,21 +1,20 @@
 # Design Drill: Classical Inheritance 
 
-##########
-Summary 
-##########
+## Summary
 
   We've begun building a new game.  We're modeling the game's characters on differnt team mascots:  nighthawks, otters, etc.  Players will select a mascot, which they will train by battling other mascots.  Through the battles, mascots earn experience points and grow more powerful.  So, basically, it's like Pokemon.
 
-  ### More on the Mascots
-    We've begun our game by focusing on the mascots themselves.  We've written classes to represent individual mascot species (e.g., `Nighthawk`).  An instance of one of our mascots has specific stats which are similar to a Pokemon's stats. (e.g., hit points, experience points, etc.) and also behaviors (e.g., its moves). 
+### More on the Mascots
 
-    The individual mascots each have a type as well.  For example, otters and sea lions are both water-type mascots, while nighthawks are flying-type mascots.  Mascots of the same type share some characteristics, like moves or resistance to certain types of attacks.
+We've begun our game by focusing on the mascots themselves.  We've written classes to represent individual mascot species (e.g., `Nighthawk`).  An instance of one of our mascots has specific stats which are similar to a Pokemon's stats. (e.g., hit points, experience points, etc.) and also behaviors (e.g., its moves). 
+
+The individual mascots each have a type as well.  For example, otters and sea lions are both water-type mascots, while nighthawks are flying-type mascots.  Mascots of the same type share some characteristics, like moves or resistance to certain types of attacks.
 
 
-  ### The Pain of Change
-    We've only begun to design our mascots, but already we're feeling some pain.  For example, we have a formula for calculating a mascot's attack strength based on its base attack strength, its level, etc.  Any time we want to tweak the formula, we have to change it in each mascot class!  We only have six so far.  Imagine what it'll be like when we have 50.
+### The Pain of Change
+We've only begun to design our mascots, but already we're feeling some pain.  For example, we have a formula for calculating a mascot's attack strength based on its base attack strength, its level, etc.  Any time we want to tweak the formula, we have to change it in each mascot class!  We only have six so far.  Imagine what it'll be like when we have 50.
 
-    It feels like there might be a better way of organizing our code. In the following exercises, we will do just that.
+It feels like there might be a better way of organizing our code. In the following exercises, we will do just that.
 
 
 ##########
